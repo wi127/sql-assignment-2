@@ -26,6 +26,12 @@ ALTER PLUGGABLE DATABASE PDB2 OPEN;
 ALTER PLUGGABLE DATABASE PDB2 SAVE STATE;
 ory
 ```
+Explanation:
+- ALTER SESSION SET CONTAINER=CDB$ROOT: This command ensures we are working in the root container of the multitenant database architecture.
+- CREATE PLUGGABLE DATABASE: This command creates a new PDB. We specify the admin user, password, and file paths for data storage.
+- ALTER PLUGGABLE DATABASE OPEN: Opens the newly created PDB to make it operational.
+- SAVE STATE: Saves the state of the PDB, so it opens automatically when the CDB starts.
+
 ### 2. Deleting a Pluggable Database (PDB)
 The following SQL commands were used to delete the PDB:
 
@@ -42,6 +48,11 @@ ALTER PLUGGABLE DATABASE PDB2 UNPLUG INTO 'C:\APP\NKUSI\PRODUCT\21C\ORADATA\XE\P
 -- Drop the PDB
 DROP PLUGGABLE DATABASE PDB2 INCLUDING DATAFILES;
 ```
+Explanation:
+- CLOSE IMMEDIATE: Ensures the PDB is closed before dropping.
+- UNPLUG INTO: Unplugs the PDB, creating an XML file with its metadata.
+- DROP INCLUDING DATAFILES: Drops the PDB and deletes its associated data files from the filesystem.
+
 ### 3. screenshoot
 
 1. Display all PDBS:
