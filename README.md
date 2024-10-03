@@ -15,7 +15,7 @@ The following SQL commands were used to create a new PDB:
 ALTER SESSION SET CONTAINER=CDB$ROOT;
 
 -- Create a new pluggable database
-CREATE PLUGGABLE DATABASE PDB_NAME 
+CREATE PLUGGABLE DATABASE PDB2 
 ADMIN USER PDB_ADMIN IDENTIFIED BY PASSWORD 
 FILE_NAME_CONVERT = ('C:\APP\NKUSI\PRODUCT\21C\ORADATA\XE\PDB$SEED\','C:\APP\NKUSI\PRODUCT\21C\ORADATA\XE\PDB_NAME\');
 
@@ -49,7 +49,17 @@ DROP PLUGGABLE DATABASE PDB_NAME INCLUDING DATAFILES;
 <img width="670" alt="Screenshot 2024-10-03 093702" src="https://github.com/user-attachments/assets/f4d27311-33d9-4dd9-a671-32dda1d4c1f5">
 
  2. Show path of PDBs:
+    
 <img width="673" alt="Screenshot 2024-10-03 101701" src="https://github.com/user-attachments/assets/6d2d8d3e-4273-489d-8a4b-7bc65acabbe4">
 
+3. Creating PDB:   
+
+<img width="675" alt="Screenshot 2024-10-03 105157" src="https://github.com/user-attachments/assets/e9f53a7a-e04c-4612-bfb9-77c3ae2a5eb3">
+
+4.  Deleting Pluggable Database (PDB):
+   
+<img width="675" alt="Screenshot 2024-10-03 110022" src="https://github.com/user-attachments/assets/dddc05ad-3c50-4426-b592-8656aeb5becf">
+
+   
 
 
