@@ -17,7 +17,7 @@ ALTER SESSION SET CONTAINER=CDB$ROOT;
 -- Create a new pluggable database
 CREATE PLUGGABLE DATABASE PDB_NAME 
 ADMIN USER PDB_ADMIN IDENTIFIED BY PASSWORD 
-FILE_NAME_CONVERT = ('/u01/app/oracle/oradata/CDB_NAME/pdbseed/', '/u01/app/oracle/oradata/CDB_NAME/PDB_NAME/');
+FILE_NAME_CONVERT = ('C:\APP\NKUSI\PRODUCT\21C\ORADATA\XE\PDB$SEED\', 'C:\APP\NKUSI\PRODUCT\21C\ORADATA\XE\PDB_NAME\');
 
 -- Open the newly created PDB
 ALTER PLUGGABLE DATABASE PDB_NAME OPEN;
@@ -44,6 +44,8 @@ DROP PLUGGABLE DATABASE PDB_NAME INCLUDING DATAFILES;
 ```
 ### 3. screenshoot
 <img width="670" alt="Screenshot 2024-10-03 093702" src="https://github.com/user-attachments/assets/f4d27311-33d9-4dd9-a671-32dda1d4c1f5">
+
+<img width="673" alt="Screenshot 2024-10-03 101701" src="https://github.com/user-attachments/assets/6d2d8d3e-4273-489d-8a4b-7bc65acabbe4">
 
 
 
