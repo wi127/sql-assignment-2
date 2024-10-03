@@ -43,8 +43,9 @@ ALTER PLUGGABLE DATABASE PDB_NAME UNPLUG INTO 'C:\APP\NKUSI\PRODUCT\21C\ORADATA\
 DROP PLUGGABLE DATABASE PDB_NAME INCLUDING DATAFILES;
 ```
 ### 3. screenshoot
+ 1.Display all PDBS:
 <img width="670" alt="Screenshot 2024-10-03 093702" src="https://github.com/user-attachments/assets/f4d27311-33d9-4dd9-a671-32dda1d4c1f5">
-
+ 2.Show path of PDBs:
 <img width="673" alt="Screenshot 2024-10-03 101701" src="https://github.com/user-attachments/assets/6d2d8d3e-4273-489d-8a4b-7bc65acabbe4">
 
 
