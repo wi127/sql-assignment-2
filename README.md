@@ -42,4 +42,8 @@ ALTER PLUGGABLE DATABASE PDB_NAME UNPLUG INTO '/u01/app/oracle/oradata/CDB_NAME/
 -- Drop the PDB
 DROP PLUGGABLE DATABASE PDB_NAME INCLUDING DATAFILES;
 ```
+### 3. screenshoot
+<img width="670" alt="Screenshot 2024-10-03 093702" src="https://github.com/user-attachments/assets/f4d27311-33d9-4dd9-a671-32dda1d4c1f5">
+
+
 
