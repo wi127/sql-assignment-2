@@ -1,4 +1,6 @@
 # sql-assignment-2
+- Name: Nkusi william
+- ID: 22980
 
 This repository contains the steps and SQL queries used for creating and deleting a Pluggable Database (PDB) in an Oracle 19c environment.
 
@@ -22,4 +24,22 @@ ALTER PLUGGABLE DATABASE PDB_NAME OPEN;
 
 -- Save the state of the PDB
 ALTER PLUGGABLE DATABASE PDB_NAME SAVE STATE;
-ory 
+ory
+```
+### 2. Deleting a Pluggable Database (PDB)
+The following SQL commands were used to delete the PDB:
+
+```sql
+-- Switch to the root container
+ALTER SESSION SET CONTAINER=CDB$ROOT;
+
+-- Close the PDB before dropping it
+ALTER PLUGGABLE DATABASE PDB_NAME CLOSE IMMEDIATE;
+
+-- Unplug the PDB
+ALTER PLUGGABLE DATABASE PDB_NAME UNPLUG INTO '/u01/app/oracle/oradata/CDB_NAME/PDB_NAME.xml';
+
+-- Drop the PDB
+DROP PLUGGABLE DATABASE PDB_NAME INCLUDING DATAFILES;
+```
+
